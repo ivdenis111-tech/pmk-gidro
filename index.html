@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HYDROGROUP — инъекционная гидроизоляция фундаментов, паркингов и тоннелей в Москве. Гарантия 15 лет. Выезд инженера за 24 часа.">
+    <title>HYDROGROUP | Инъекционная гидроизоляция — Москва</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+    <!-- Tailwind CDN (utility layout only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary:   '#006495',
+                        accent:    '#1499df',
+                        orange:    '#ff5722',
+                        dark:      '#002d46',
+                        surface:   '#f6fafd',
+                        'surface-low': '#f0f4f7',
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-surface">
+
+<!-- ════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════ -->
+<header class="site-header nav-glass fixed top-0 inset-x-0 z-50" style="height:80px; display:flex; align-items:center;">
+    <div class="container w-full flex justify-between items-center">
+
+        <!-- Logo -->
+        <a href="#" class="footer-logo text-2xl" style="color:#0f172a; text-decoration:none;">HYDROGROUP</a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden lg:flex items-center gap-8" aria-label="Основная навигация">
+            <a href="#services"  class="nav-link" data-section="services">Услуги</a>
+            <a href="#prices"    class="nav-link" data-section="prices">Цены</a>
+            <a href="#portfolio" class="nav-link" data-section="portfolio">Кейсы</a>
+            <a href="#about"     class="nav-link" data-section="about">О компании</a>
+            <a href="#contacts"  class="nav-link" data-section="contacts">Контакты</a>
+        </nav>
+
+        <!-- Right block -->
+        <div class="flex items-center gap-6">
+            <div class="hidden md:flex flex-col items-end">
+                <a href="tel:+79165899123" class="text-sm font-bold text-slate-900 hover:text-accent transition-colors" style="text-decoration:none;">+7 (916) 589-91-23</a>
+                <span class="text-xs text-slate-400">Ежедневно 9:00–21:00</span>
+            </div>
+            <a href="#contacts" class="btn-cta hidden sm:inline-flex">Вызвать инженера</a>
+
+            <!-- Mobile burger -->
+            <button id="menu-toggle" class="lg:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5" aria-label="Открыть меню" aria-expanded="false">
+                <span class="block w-6 h-0.5 bg-slate-700"></span>
+                <span class="block w-6 h-0.5 bg-slate-700"></span>
+                <span class="block w-4 h-0.5 bg-slate-700"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="mobile-menu fixed top-20 inset-x-0 z-40 shadow-xl border-t border-slate-100" aria-hidden="true">
+    <nav class="container py-6 flex flex-col gap-4">
+        <a href="#services"  class="nav-link py-2">Услуги</a>
+        <a href="#prices"    class="nav-link py-2">Цены</a>
+        <a href="#portfolio" class="nav-link py-2">Кейсы</a>
+        <a href="#about"     class="nav-link py-2">О компании</a>
+        <a href="#contacts"  class="nav-link py-2">Контакты</a>
+        <a href="tel:+79165899123" class="btn-primary w-fit mt-2">+7 (916) 589-91-23</a>
+    </nav>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" style="padding-top:80px;" aria-label="Главный экран">
+    <div class="hero__bg">
+        <img src="assets/images/hero_bg.jpg" alt="Промышленная стройка, бетонные конструкции" width="1920" height="1080">
+        <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container hero__content" style="padding-top:5rem; padding-bottom:5rem;">
+        <span class="hero__badge">Инженерные решения</span>
+        <h1 class="hero__title">Инъекционная гидроизоляция</h1>
+        <p class="hero__subtitle">Защита фундаментов, паркингов и тоннелей от протечек любой сложности. Гарантия 15 лет по стандартам промышленного монолита.</p>
+        <div class="hero__actions flex flex-wrap gap-4">
+            <a href="#contacts" class="btn-primary">
+                <span class="material-symbols-outlined" style="font-size:1.1em;">engineering</span>
+                Вызвать специалиста
+            </a>
+            <a href="#prices" class="btn-outline">Смотреть цены</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     STATS STRIP
+════════════════════════════════════════════════════════ -->
+<section class="bg-white py-10 border-b border-slate-100" aria-label="Ключевые показатели">
+    <div class="container">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 js-fade" data-stagger>
+            <div class="text-center" data-stagger-item>
+                <div class="stat-value" data-count="12" data-plus="true">12+</div>
+                <div class="stat-label">лет&nbsp;на&nbsp;рынке</div>
+            </div>
+            <div class="text-center" data-stagger-item>
+                <div class="stat-value" data-count="1000" data-plus="true">1000+</div>
+                <div class="stat-label">реализованных&nbsp;объектов</div>
+            </div>
+            <div class="text-center" data-stagger-item>
+                <div class="stat-value" data-count="15">15</div>
+                <div class="stat-label">лет&nbsp;гарантии</div>
+            </div>
+            <div class="text-center" data-stagger-item>
+                <div class="stat-value" data-count="24">24</div>
+                <div class="stat-label">часа&nbsp;до&nbsp;выезда</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════════════ -->
+<section id="services" class="py-24 bg-surface" aria-labelledby="services-title">
+    <div class="container">
+        <div class="mb-14 js-fade">
+            <h2 id="services-title" class="section-title text-4xl">Наши услуги</h2>
+            <span class="section-rule"></span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-stagger>
+
+            <article class="service-card" data-stagger-item>
+                <div class="service-card__image">
+                    <img src="assets/images/service_1.jpg" alt="Рабочий выполняет инъекционный ремонт трещин в бетоне" loading="lazy" width="600" height="400">
+                </div>
+                <div class="service-card__body">
+                    <h3 class="service-card__title">Инъекционный ремонт</h3>
+                    <p class="service-card__text">Устранение протечек и заполнение пустот в бетонных конструкциях полимерными составами под высоким давлением.</p>
+                    <a href="#contacts" class="service-card__link">
+                        Подробнее <span class="material-symbols-outlined" style="font-size:1em;">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card" data-stagger-item>
+                <div class="service-card__image">
+                    <img src="assets/images/service_2.jpg" alt="Усиление кирпичной кладки фундамента" loading="lazy" width="600" height="400">
+                </div>
+                <div class="service-card__body">
+                    <h3 class="service-card__title">Усиление кладок</h3>
+                    <p class="service-card__text">Укрепление фундаментов и стен из кирпича или камня, предотвращение разрушения и осадки здания.</p>
+                    <a href="#contacts" class="service-card__link">
+                        Подробнее <span class="material-symbols-outlined" style="font-size:1em;">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card" data-stagger-item>
+                <div class="service-card__image">
+                    <img src="assets/images/service_3.jpg" alt="Установка отсечного гидроизоляционного барьера" loading="lazy" width="600" height="400">
+                </div>
+                <div class="service-card__body">
+                    <h3 class="service-card__title">Отсечная изоляция</h3>
+                    <p class="service-card__text">Создание барьера против капиллярного подъёма влаги в старых и новых фундаментах без раскопки грунта.</p>
+                    <a href="#contacts" class="service-card__link">
+                        Подробнее <span class="material-symbols-outlined" style="font-size:1em;">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     PRICE LIST
+════════════════════════════════════════════════════════ -->
+<section id="prices" class="py-24 bg-surface-low" aria-labelledby="prices-title">
+    <div class="container">
+        <div class="text-center mb-14 js-fade">
+            <h2 id="prices-title" class="section-title text-4xl">Прайс-лист на работы</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden shadow-xl js-fade">
+            <table class="price-table" aria-label="Стоимость услуг гидроизоляции">
+                <thead>
+                    <tr>
+                        <th scope="col">Услуга</th>
+                        <th scope="col">Ед. изм.</th>
+                        <th scope="col">Стоимость от</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="font-semibold text-slate-800">Ремонт трещин в бетоне</td>
+                        <td class="price-unit">п.м.</td>
+                        <td class="price-value">2 800 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800">Инъектирование деформационных швов</td>
+                        <td class="price-unit">п.м.</td>
+                        <td class="price-value">4 500 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800">Отсечная гидроизоляция (инъекции)</td>
+                        <td class="price-unit">п.м.</td>
+                        <td class="price-value">3 200 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800">Усиление кирпичной кладки</td>
+                        <td class="price-unit">м²</td>
+                        <td class="price-value">5 600 ₽</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold text-slate-800">Гидроизоляция вводов коммуникаций</td>
+                        <td class="price-unit">шт.</td>
+                        <td class="price-value">8 000 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-center text-sm text-slate-400 mt-6 js-fade">
+            Точная смета — после бесплатного осмотра инженером.
+            <a href="#contacts" class="text-accent font-semibold hover:underline">Оставить заявку →</a>
+        </p>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     WHY CHOOSE US
+════════════════════════════════════════════════════════ -->
+<section class="py-24 bg-surface" aria-labelledby="advantages-title">
+    <div class="container">
+        <div class="text-center mb-16 js-fade">
+            <h2 id="advantages-title" class="section-title text-4xl">Почему выбирают нас</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" data-stagger>
+
+            <div class="advantage-item" data-stagger-item>
+                <div class="advantage-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">precision_manufacturing</span>
+                </div>
+                <div>
+                    <h3 class="advantage-title">Узкая специализация</h3>
+                    <p class="advantage-text">Работаем только с инъекционными технологиями, доводя мастерство до совершенства.</p>
+                </div>
+            </div>
+
+            <div class="advantage-item" data-stagger-item>
+                <div class="advantage-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">history_edu</span>
+                </div>
+                <div>
+                    <h3 class="advantage-title">12 лет опыта</h3>
+                    <p class="advantage-text">Более тысячи успешно реализованных объектов промышленного и гражданского назначения.</p>
+                </div>
+            </div>
+
+            <div class="advantage-item" data-stagger-item>
+                <div class="advantage-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                    <h3 class="advantage-title">Гарантия 15 лет</h3>
+                    <p class="advantage-text">Прописываем ответственность за протечки в договоре. Полная юридическая защита.</p>
+                </div>
+            </div>
+
+            <div class="advantage-item" data-stagger-item>
+                <div class="advantage-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">savings</span>
+                </div>
+                <div>
+                    <h3 class="advantage-title">Экономия до 30%</h3>
+                    <p class="advantage-text">Собственный парк оборудования и прямые контракты с производителями материалов.</p>
+                </div>
+            </div>
+
+            <div class="advantage-item" data-stagger-item>
+                <div class="advantage-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">engineering</span>
+                </div>
+                <div>
+                    <h3 class="advantage-title">Сертифицированы</h3>
+                    <p class="advantage-text">Все сотрудники проходят ежегодную аттестацию у ведущих химических концернов.</p>
+                </div>
+            </div>
+
+            <div class="advantage-item" data-stagger-item>
+                <div class="advantage-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">speed</span>
+                </div>
+                <div>
+                    <h3 class="advantage-title">Выезд за 24ч</h3>
+                    <p class="advantage-text">Оперативно реагируем на аварийные протечки в любой точке Москвы и области.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════════════════════ -->
+<section class="py-12" aria-label="Форма заявки">
+    <div class="container">
+        <div class="cta-banner js-fade">
+            <span class="material-symbols-outlined cta-banner__ghost" aria-hidden="true">engineering</span>
+
+            <div class="cta-banner__inner">
+                <div class="cta-banner__text">
+                    <h2 class="cta-banner__title">Бесплатный расчёт объекта</h2>
+                    <p class="cta-banner__sub">Наш инженер свяжется с вами в течение 15 минут для уточнения технических характеристик.</p>
+                </div>
+
+                <form class="cta-form" data-cta-form novalidate>
+                    <div class="cta-form__row">
+                        <input
+                            id="cta-phone"
+                            type="tel"
+                            class="cta-input"
+                            placeholder="+7 (___) ___-__-__"
+                            data-phone
+                            autocomplete="tel"
+                            aria-label="Ваш телефон"
+                            required
+                        >
+                        <button type="submit" class="cta-btn">Рассчитать</button>
+                    </div>
+
+                    <label class="cta-privacy">
+                        <input type="checkbox" class="cta-privacy__checkbox" required>
+                        <span class="cta-privacy__text">
+                            Нажимая кнопку, я даю согласие на <a href="/privacy" class="cta-privacy__link">обработку персональных данных</a> в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006&nbsp;№&nbsp;152-ФЗ «О&nbsp;персональных данных» и принимаю <a href="/privacy" class="cta-privacy__link">политику конфиденциальности</a>.
+                        </span>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     PORTFOLIO
+════════════════════════════════════════════════════════ -->
+<section id="portfolio" class="py-24 bg-surface-low overflow-hidden" aria-labelledby="portfolio-title">
+    <div class="container">
+
+        <div class="flex justify-between items-end mb-12 js-fade">
+            <div>
+                <span class="section-label">Портфолио</span>
+                <h2 id="portfolio-title" class="section-title text-4xl">Реализованные кейсы</h2>
+            </div>
+            <div class="hidden md:flex gap-3">
+                <button id="scroll-left" class="nav-arrow" aria-label="Предыдущий кейс">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <button id="scroll-right" class="nav-arrow" aria-label="Следующий кейс">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="cases-track" class="portfolio-track" role="list">
+
+            <article class="portfolio-card" role="listitem">
+                <img src="assets/images/case_parking.jpg" alt="Подземный паркинг ЖК Скандинавия после гидроизоляции" loading="lazy" width="380" height="520">
+                <span class="portfolio-card__badge">ЖК Скандинавия</span>
+                <div class="portfolio-card__overlay">
+                    <h3 class="portfolio-card__title">Подземный паркинг</h3>
+                    <p class="portfolio-card__text">Ликвидация множественных протечек деформационных швов на площади 1 200 м². Использованы акрилатные гели высокой эластичности.</p>
+                    <button class="portfolio-card__btn">Подробнее</button>
+                </div>
+            </article>
+
+            <article class="portfolio-card" role="listitem">
+                <img src="assets/images/case_office.jpg" alt="Технический подвал БЦ Основа после устранения протечек" loading="lazy" width="380" height="520">
+                <span class="portfolio-card__badge">БЦ Основа</span>
+                <div class="portfolio-card__overlay">
+                    <h3 class="portfolio-card__title">Технический подвал</h3>
+                    <p class="portfolio-card__text">Устранение активных напорных протечек через вводы коммуникаций. Работы выполнены в условиях постоянного притока воды.</p>
+                    <button class="portfolio-card__btn">Подробнее</button>
+                </div>
+            </article>
+
+            <article class="portfolio-card" role="listitem">
+                <img src="assets/images/case_tank.jpg" alt="Бетонный резервуар МФК ОКО после герметизации" loading="lazy" width="380" height="520">
+                <span class="portfolio-card__badge">МФК ОКО</span>
+                <div class="portfolio-card__overlay">
+                    <h3 class="portfolio-card__title">Бетонный резервуар</h3>
+                    <p class="portfolio-card__text">Полная герметизация микротрещин в стенах пожарного резервуара методом сплошного инъектирования бетонной обоймы.</p>
+                    <button class="portfolio-card__btn">Подробнее</button>
+                </div>
+            </article>
+
+            <article class="portfolio-card" role="listitem">
+                <img src="assets/images/case_complex.jpg" alt="Многофункциональный комплекс — гидроизоляция подземных уровней" loading="lazy" width="380" height="520">
+                <span class="portfolio-card__badge">МФК Центр</span>
+                <div class="portfolio-card__overlay">
+                    <h3 class="portfolio-card__title">Подземные уровни МФК</h3>
+                    <p class="portfolio-card__text">Комплексная защита трёх подземных этажей многофункционального центра от грунтовых вод.</p>
+                    <button class="portfolio-card__btn">Подробнее</button>
+                </div>
+            </article>
+
+            <article class="portfolio-card" role="listitem">
+                <img src="assets/images/case_skyscraper.jpg" alt="Небоскрёб — гидроизоляция фундаментной плиты" loading="lazy" width="380" height="520">
+                <span class="portfolio-card__badge">Башня Меркурий</span>
+                <div class="portfolio-card__overlay">
+                    <h3 class="portfolio-card__title">Фундаментная плита</h3>
+                    <p class="portfolio-card__text">Санация и укрепление фундаментной плиты высотного здания при глубоком залегании грунтовых вод.</p>
+                    <button class="portfolio-card__btn">Подробнее</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════ -->
+<section id="about" class="about-section py-24" aria-labelledby="about-title">
+    <div class="about-section__photo" aria-hidden="true">
+        <img src="assets/images/engineer_work.jpg" alt="" loading="lazy" width="800" height="1000">
+    </div>
+
+    <div class="container relative z-10">
+        <div style="max-width:680px;">
+            <span class="section-label">О компании</span>
+            <h2 id="about-title" class="section-title text-5xl md:text-6xl text-white mb-8 js-fade">
+                Мы создаём <span style="color:var(--clr-accent);">абсолютную защиту.</span>
+            </h2>
+
+            <div class="about-quote mb-10 js-fade">
+                <p>«Наша миссия — внедрять технологии промышленного монолита в каждый проект. Качественная гидроизоляция — это фундамент долговечности любого сооружения.»</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-11 h-11 rounded-full flex items-center justify-center" style="background:var(--clr-accent);">
+                        <span class="material-symbols-outlined text-white">person</span>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold text-sm uppercase tracking-wide mb-0" style="margin:0;">Александр Волков</p>
+                        <p class="text-xs" style="color:rgba(255,255,255,.45); margin:2px 0 0;">Основатель, Главный инженер</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 js-fade" data-stagger>
+                <div class="about-bullet" data-stagger-item>Собственные лаборатории контроля качества</div>
+                <div class="about-bullet" data-stagger-item>Лицензия СРО и допуски на особо опасные объекты</div>
+                <div class="about-bullet" data-stagger-item>Материалы BASF, MC-Bauchemie, Sika</div>
+                <div class="about-bullet" data-stagger-item>Штатные инженеры с опытом 10+ лет</div>
+                <div class="about-bullet" data-stagger-item>Прозрачное ценообразование без скрытых работ</div>
+                <div class="about-bullet" data-stagger-item>Страхование ответственности на 50 000 000 ₽</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     GUARANTEES & CERTIFICATES
+════════════════════════════════════════════════════════ -->
+<section class="py-24 bg-surface-low" aria-labelledby="guarantees-title">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+            <div class="js-fade">
+                <h2 id="guarantees-title" class="section-title text-4xl mb-6">Гарантии и сертификаты</h2>
+                <p class="text-slate-500 leading-relaxed mb-8">
+                    Все работы выполняются в соответствии со СНиП и ГОСТ. Мы предоставляем полный пакет
+                    исполнительной документации — акты скрытых работ и сертификаты на применяемые составы.
+                </p>
+                <div class="flex flex-col gap-4">
+                    <div class="guarantee-card">
+                        <p class="guarantee-card__title">Юридическая гарантия</p>
+                        <p class="guarantee-card__text">Прописываем ответственность за протечки в договоре на срок до 15 лет.</p>
+                    </div>
+                    <div class="guarantee-card guarantee-card--dark">
+                        <p class="guarantee-card__title">Страхование рисков</p>
+                        <p class="guarantee-card__text">Наша ответственность застрахована на сумму 50 000 000 ₽.</p>
+                    </div>
+                    <div class="guarantee-card">
+                        <p class="guarantee-card__title">Исполнительная документация</p>
+                        <p class="guarantee-card__text">Полный пакет: акты скрытых работ, сертификаты составов, схемы расположения инъекций.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 js-fade" data-stagger>
+                <div class="doc-card" data-stagger-item>
+                    <img src="assets/images/doc_cert.jpg" alt="Сертификат соответствия HYDROGROUP" loading="lazy" width="300" height="420">
+                </div>
+                <div class="doc-card" data-stagger-item>
+                    <img src="assets/images/doc_letter.jpg" alt="Рекомендательное письмо от заказчика" loading="lazy" width="300" height="420">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════════════ -->
+<section class="py-24 bg-surface" aria-labelledby="faq-title">
+    <div class="container">
+        <div class="text-center mb-14 js-fade">
+            <h2 id="faq-title" class="section-title text-4xl">Часто задаваемые вопросы</h2>
+        </div>
+
+        <div class="flex flex-col gap-3 js-fade" data-accordion-group>
+
+            <div class="accordion-item is-open">
+                <button class="accordion-trigger" aria-expanded="true">
+                    <span>Можно ли делать гидроизоляцию, когда вода уже течёт?</span>
+                    <span class="material-symbols-outlined accordion-icon" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="accordion-body" role="region">
+                    <div class="accordion-body__inner">
+                        Да, именно в этом и состоит преимущество инъекционной технологии. Мы используем специальные расширяющиеся смолы, которые застывают при контакте с водой за секунды, моментально останавливая напорные протечки.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                    <span>Каков срок службы инъекционной гидроизоляции?</span>
+                    <span class="material-symbols-outlined accordion-icon" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="accordion-body" role="region">
+                    <div class="accordion-body__inner">
+                        При правильном подборе состава срок службы полимерных гелей и смол сопоставим со сроком службы самого бетонного сооружения — от 30 до 50 лет и более.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                    <span>Нужно ли откапывать фундамент снаружи?</span>
+                    <span class="material-symbols-outlined accordion-icon" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="accordion-body" role="region">
+                    <div class="accordion-body__inner">
+                        Нет. Одно из главных преимуществ — возможность проведения работ изнутри помещения (подвала или паркинга). Состав проникает сквозь стену или трещину и образует защитный барьер с внешней стороны.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                    <span>Какие составы вы используете в работе?</span>
+                    <span class="material-symbols-outlined accordion-icon" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="accordion-body" role="region">
+                    <div class="accordion-body__inner">
+                        Мы работаем исключительно с сертифицированными полимерными составами от мировых лидеров: BASF, MC-Bauchemie и Sika. Это акрилатные гели, полиуретановые смолы и эпоксидные составы, подбираемые индивидуально под каждую техническую задачу.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                    <span>От чего зависит итоговая стоимость работ?</span>
+                    <span class="material-symbols-outlined accordion-icon" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="accordion-body" role="region">
+                    <div class="accordion-body__inner">
+                        Цена формируется исходя из объёма повреждений, типа используемого материала (смола или гель), сложности доступа к объекту и интенсивности протечек. Точная смета составляется инженером после бесплатного осмотра.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     CONTACTS
+════════════════════════════════════════════════════════ -->
+<section id="contacts" class="py-24 bg-surface-low" aria-labelledby="contacts-title">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+            <!-- Info card -->
+            <div class="contact-info-card flex flex-col gap-8">
+                <h2 id="contacts-title" class="section-title text-3xl" style="color:#0f172a;">Свяжитесь с нами</h2>
+
+                <div class="flex flex-col gap-6">
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div>
+                            <p class="contact-label">Адрес офиса</p>
+                            <p class="contact-value">г. Москва, Пресненская наб., д. 12, офис 45</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div>
+                            <p class="contact-label">Телефон</p>
+                            <a href="tel:+79165899123" class="contact-value text-xl hover:text-accent transition-colors" style="text-decoration:none;">+7 (916) 589-91-23</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:info@hydrogroup.ru" class="contact-value hover:text-accent transition-colors" style="text-decoration:none;">info@hydrogroup.ru</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="flex flex-col gap-4 pt-4 border-t border-slate-100" data-cta-form novalidate>
+                    <p class="font-bold text-slate-700 text-sm uppercase tracking-wide">Заказать обратный звонок</p>
+                    <div class="flex gap-3">
+                        <input
+                            type="tel"
+                            class="cta-input flex-1"
+                            style="background:#f8fafc; box-shadow:none; border:1.5px solid #e2e8f0;"
+                            placeholder="+7 (___) ___-__-__"
+                            data-phone
+                            autocomplete="tel"
+                            aria-label="Ваш телефон"
+                            required
+                        >
+                        <button type="submit" class="cta-btn" style="background:var(--clr-primary);">Позвоните</button>
+                    </div>
+                </form>
+
+                <div class="messenger-btns">
+                    <a href="https://t.me/hydrogroup" class="telegram-btn" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+                        <span class="material-symbols-outlined">send</span>
+                        Telegram
+                    </a>
+                    <a href="https://t.me/maks_hydrogroup" class="maks-btn" target="_blank" rel="noopener noreferrer" aria-label="Написать Максу">
+                        <span class="material-symbols-outlined">chat</span>
+                        Макс
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="rounded-2xl overflow-hidden shadow-xl min-h-96 relative" style="min-height:450px;">
+                <iframe
+                    class="map-frame absolute inset-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.123!2d37.53!3d55.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzAwLjAiTiAzN8KwMzInMDAuMCJF!5e0!3m2!1sru!2sru!4v1234567890"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Офис HYDROGROUP на карте"
+                ></iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="site-footer py-16" role="contentinfo">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <a href="#" class="footer-logo">HYDROGROUP</a>
+                <p class="text-sm mt-4 leading-relaxed" style="color:rgba(255,255,255,.55); max-width:220px;">
+                    Профессиональная инъекционная гидроизоляция в Москве и МО. Гарантия 15 лет.
+                </p>
+                <div class="flex gap-3 mt-6">
+                    <a href="tel:+79165899123" class="footer-social" aria-label="Позвонить">
+                        <span class="material-symbols-outlined" style="font-size:1rem;">call</span>
+                    </a>
+                    <a href="mailto:info@hydrogroup.ru" class="footer-social" aria-label="Написать на email">
+                        <span class="material-symbols-outlined" style="font-size:1rem;">mail</span>
+                    </a>
+                    <a href="https://t.me/hydrogroup" class="footer-social" aria-label="Telegram" target="_blank" rel="noopener">
+                        <span class="material-symbols-outlined" style="font-size:1rem;">send</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Nav -->
+            <div>
+                <p class="footer-nav-heading">Навигация</p>
+                <a href="#services"  class="footer-nav-link">Услуги</a>
+                <a href="#prices"    class="footer-nav-link">Прайс-лист</a>
+                <a href="#portfolio" class="footer-nav-link">Кейсы</a>
+                <a href="#about"     class="footer-nav-link">О компании</a>
+                <a href="#contacts"  class="footer-nav-link">Контакты</a>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <p class="footer-nav-heading">Услуги</p>
+                <a href="#services" class="footer-nav-link">Инъекционный ремонт</a>
+                <a href="#services" class="footer-nav-link">Усиление кладок</a>
+                <a href="#services" class="footer-nav-link">Отсечная изоляция</a>
+                <a href="#services" class="footer-nav-link">Герметизация швов</a>
+            </div>
+
+            <!-- Contacts -->
+            <div>
+                <p class="footer-nav-heading">Контакты</p>
+                <p class="text-sm mb-2" style="color:rgba(255,255,255,.6);">+7 (916) 589-91-23</p>
+                <p class="text-sm mb-2" style="color:rgba(255,255,255,.6);">info@hydrogroup.ru</p>
+                <p class="text-sm" style="color:rgba(255,255,255,.6);">Пресненская наб., 12<br>Ежедневно 9:00–21:00</p>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="footer-copy">© 2024 HYDROGROUP. Промышленный Монолит. Все права защищены.</p>
+            <div class="flex gap-6">
+                <a href="#" class="footer-nav-link text-xs">Политика конфиденциальности</a>
+                <a href="#" class="footer-nav-link text-xs">Гарантии</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
