@@ -11,3 +11,5 @@ sync_images_ascii.ps1
 # OS
 .DS_Store
 Thumbs.db
+
+.vercel
