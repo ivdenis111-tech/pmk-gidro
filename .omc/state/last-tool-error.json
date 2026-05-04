@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"G:/Projects/ПМК Гидро\\\" && npx vercel --yes --prod 2>&1\",\"description\":\"Deploy to Vercel production\"}",
+  "error": "Exit code 1\n<claude-code-hint v=\"1\" type=\"plugin\" value=\"vercel@claude-plugins-official\" />\nLoading scopes…\nSearching for existing projects…\n> No framework detected. Default Project Settings:\n\n- Build Command: `npm run vercel-build` or `npm run build`\n- Development Command: None\n- Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`\n- Output Directory: `public` if it exists, or `.`\nError: Project names can be up to 100 characters long and must be lowercase. They can i...",
+  "timestamp": "2026-04-27T07:04:30.478Z",
+  "retry_count": 1
+}

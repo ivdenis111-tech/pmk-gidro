@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HYDROGROUP | Промышленный Монолит — Инъекционная гидроизоляция</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f0f4f7",
+                    "on-tertiary-fixed": "#3b0900",
+                    "on-secondary-container": "#40637e",
+                    "inverse-surface": "#2c3134",
+                    "on-primary-container": "#002d46",
+                    "on-primary-fixed-variant": "#004b71",
+                    "surface": "#f6fafd",
+                    "primary-container": "#1499df",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#bbdefe",
+                    "on-background": "#171c1f",
+                    "surface-variant": "#dfe3e6",
+                    "on-secondary-fixed-variant": "#264a64",
+                    "tertiary-fixed-dim": "#ffb5a0",
+                    "outline-variant": "#bec7d2",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d6dbdd",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eaeef1",
+                    "tertiary": "#b02f00",
+                    "outline": "#6f7882",
+                    "inverse-primary": "#8fcdff",
+                    "on-tertiary-fixed-variant": "#862200",
+                    "secondary": "#3f627d",
+                    "on-secondary-fixed": "#001e30",
+                    "surface-bright": "#f6fafd",
+                    "on-primary-fixed": "#001e30",
+                    "secondary-fixed": "#cbe6ff",
+                    "surface-container-highest": "#dfe3e6",
+                    "on-surface-variant": "#3f4850",
+                    "background": "#f6fafd",
+                    "primary-fixed": "#cbe6ff",
+                    "primary": "#006495",
+                    "surface-tint": "#006495",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e5e9ec",
+                    "on-surface": "#171c1f",
+                    "secondary-fixed-dim": "#a7cbea",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#ffdbd1",
+                    "primary-fixed-dim": "#8fcdff",
+                    "on-tertiary-container": "#541200",
+                    "inverse-on-surface": "#edf1f4",
+                    "tertiary-container": "#ff5722"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "display": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-item.active .accordion-content { max-height: 500px; }
+        .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 h-20">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-black text-slate-900 tracking-tighter uppercase">HYDROGROUP</span>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-slate-600 font-medium font-['Manrope'] tracking-tight uppercase hover:text-[#1499DF] transition-all duration-300" href="#services">Услуги</a>
+<a class="text-slate-600 font-medium font-['Manrope'] tracking-tight uppercase hover:text-[#1499DF] transition-all duration-300" href="#prices">Цены</a>
+<a class="text-slate-600 font-medium font-['Manrope'] tracking-tight uppercase hover:text-[#1499DF] transition-all duration-300" href="#portfolio">Кейсы</a>
+<a class="text-slate-600 font-medium font-['Manrope'] tracking-tight uppercase hover:text-[#1499DF] transition-all duration-300" href="#about">О компании</a>
+<a class="text-slate-600 font-medium font-['Manrope'] tracking-tight uppercase hover:text-[#1499DF] transition-all duration-300" href="#contacts">Контакты</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex flex-col items-end">
+<span class="text-sm font-bold text-slate-900">+7 (916) 589-91-23</span>
+<span class="text-xs text-slate-500">Москва, ежедневно 9:00-21:00</span>
+</div>
+<button class="bg-tertiary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm uppercase tracking-wide active:scale-95 transform transition-transform shadow-lg shadow-orange-500/20">
+                Вызвать инженера
+            </button>
+</div>
+</div>
+</header>
+<!-- 1. Hero Section -->
+<section class="relative pt-32 pb-24 overflow-hidden min-h-[90vh] flex items-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="high-tech industrial construction site with concrete structures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmdA0alu2Tuis9Kk87zT3eoFlncdtWfkJtRBGHNPKLxzFAmTW5_Lpx70dbXY6BH3XMCGojI-289khUJDusi-u40q4QNKM2xiH3wt5GRWxowd3PPMQZA2jLIdWP7fCjLhamXG8A3Q497LXCf1MjJRV57Y2orEP-uRuirHCcrX7NUEO_y1t0KUQ5ZWBeNXPEEyyy4GrocBed_4sJ366slVFq0hQ7ZGeORse5L-mHLQS38xtCoFK9VkF9hAD9YPkeQiGegPusuqv-ZXc"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-primary-container/90 to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col items-start gap-8">
+<span class="bg-[#1499DF] text-white px-4 py-1 text-xs font-bold tracking-[0.2em] uppercase rounded">Инженерные решения</span>
+<h1 class="text-6xl md:text-8xl font-extrabold text-white leading-tight tracking-tighter max-w-4xl">
+            ИНЪЕКЦИОННАЯ ГИДРОИЗОЛЯЦИЯ
+        </h1>
+<p class="text-xl md:text-2xl text-slate-200 max-w-2xl font-light leading-relaxed">
+            Защита фундаментов, паркингов и тоннелей от протечек любой сложности с гарантией 15 лет по стандартам промышленного монолита.
+        </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-[#1499DF] text-white px-8 py-4 rounded-lg font-bold text-lg uppercase tracking-tight active:scale-95 transition-transform">
+                Вызвать специалиста
+            </button>
+<button class="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg uppercase tracking-tight backdrop-blur-sm hover:bg-white/10 transition-colors">
+                Смотреть цены
+            </button>
+</div>
+</div>
+</section>
+<!-- 2. Our Services Grid -->
+<section class="py-24 bg-surface" id="services">
+<div class="max-w-7xl mx-auto px-8 max-w-6xl">
+<div class="mb-16">
+<h2 class="text-4xl font-black text-slate-900 uppercase tracking-tighter mb-4">Наши услуги</h2>
+<div class="h-1.5 w-24 bg-tertiary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="industrial worker injecting resin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMlqCZk-a0vOVC9UsItooVpybTcahglNRVmpZVyToJE1cs92Kd8Lqra89-G0cyprS499vcmb3BfV3sgYvjbDT1crurSolspeBUlfeKiALw1UNW4-0T2EB2S4OWveHfgmjMc3Hyh9CLdlKkluaNwvXS6Hs5Q1NxMMvok1qiZDqdKCY0xbRE9R4Kjsx5YoiPbp5WKzKnYxBWor3rASzRlIGgX2OlYc-Y_72QrcnloQH2GiXxTtoOwZQS5oglcvdj--i6U1LjUkvNG9w"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">Инъекционный ремонт</h3>
+<p class="text-slate-600 mb-6">Устранение протечек и заполнение пустот в бетонных конструкциях полимерными составами под высоким давлением.</p>
+<a class="text-[#1499DF] font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
+                        Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="reinforcing old brick wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTYbpQAvztMY9U9ggpgahpzYZxJMjhZJ9B9C2o7WtbuZXdhkTQ96EEONHnV9Sj1NOZQeFX5T2478SxSTPKnhWcjMzg_SRwHtWSFOlwcoN8Cf3QOHB3rAVV6uDMzvKxEbR6Azy5lZicElbcQj_ab2Su6kWGDMtIi8gHLHDc_0Zim-KU3cnA9Hbj4Z_kaqgYX2WlXVADnSOQuKA_ERc2VywhtXARlLMK36f8_weLyg-sE9IZCdLcMxJyRdYixjU1KiWDHz1gUm3mh2M"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">Усиление кладок</h3>
+<p class="text-slate-600 mb-6">Укрепление фундаментов и стен из кирпича или камня, предотвращение разрушения и осадки здания.</p>
+<a class="text-[#1499DF] font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
+                        Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="waterproof barrier installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkmVMv80ArMTBqE25VzQRcYPRcbWA1v-5uY4aO0fwr2X4p1UudCRJkE4zNrUS0G-0iiM-6x7KsxD0OtRTvhmvXzRCh-GG34kvZAZ61SYa9kduIiP2ESjMoh9vw2BWkA4eLNHubOnQ4stPL96NH3PHDtt5ADdru0MtP7YoqKoMCughu_gykGeZtxOsMmZkLgia4516GErtuRH0LRQRg-cgpVzyx2iiS4vw8rWZ0fTFbfgzeT2VL29JfV3osuWpCAKDlCD15fgezYIk"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold text-slate-900 mb-4 uppercase">Отсечная изоляция</h3>
+<p class="text-slate-600 mb-6">Создание барьера против капиллярного подъема влаги в старых и новых фундаментах без раскопки грунта.</p>
+<a class="text-[#1499DF] font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
+                        Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Price List Section -->
+<section class="py-24 bg-surface-container-low" id="prices">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-black text-slate-900 uppercase tracking-tighter mb-12 text-center">Прайс-лист на работы</h2>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl shadow-slate-200">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary text-white">
+<th class="py-6 px-8 font-bold uppercase tracking-widest text-sm">Услуга</th>
+<th class="py-6 px-8 font-bold uppercase tracking-widest text-sm">Ед. изм.</th>
+<th class="py-6 px-8 font-bold uppercase tracking-widest text-sm">Стоимость от</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100">
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-6 px-8 font-semibold text-slate-800">Ремонт трещин в бетоне</td>
+<td class="py-6 px-8 text-slate-500">п.м.</td>
+<td class="py-6 px-8 font-bold text-[#1499DF]">2 800 ₽</td>
+</tr>
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-6 px-8 font-semibold text-slate-800">Инъектирование деформационных швов</td>
+<td class="py-6 px-8 text-slate-500">п.м.</td>
+<td class="py-6 px-8 font-bold text-[#1499DF]">4 500 ₽</td>
+</tr>
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-6 px-8 font-semibold text-slate-800">Отсечная гидроизоляция (инъекции)</td>
+<td class="py-6 px-8 text-slate-500">п.м.</td>
+<td class="py-6 px-8 font-bold text-[#1499DF]">3 200 ₽</td>
+</tr>
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-6 px-8 font-semibold text-slate-800">Усиление кирпичной кладки</td>
+<td class="py-6 px-8 text-slate-500">м²</td>
+<td class="py-6 px-8 font-bold text-[#1499DF]">5 600 ₽</td>
+</tr>
+<tr class="hover:bg-slate-50 transition-colors">
+<td class="py-6 px-8 font-semibold text-slate-800">Гидроизоляция вводов коммуникаций</td>
+<td class="py-6 px-8 text-slate-500">шт.</td>
+<td class="py-6 px-8 font-bold text-[#1499DF]">8 000 ₽</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 4. Why Choose Us (3x2 Grid) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 max-w-6xl">
+<h2 class="text-4xl font-black text-slate-900 uppercase tracking-tighter mb-16 text-center">Почему выбирают нас</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Adv 1 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 uppercase mb-2">Узкая специализация</h4>
+<p class="text-slate-500 text-sm">Работаем только с инъекционными технологиями, доводя мастерство до совершенства.</p>
+</div>
+</div>
+<!-- Adv 2 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 uppercase mb-2">12 лет опыта</h4>
+<p class="text-slate-500 text-sm">Более тысячи успешно реализованных объектов промышленного и гражданского назначения.</p>
+</div>
+</div>
+<!-- Adv 3 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 uppercase mb-2">Гарантия 15 лет</h4>
+<p class="text-slate-500 text-sm">Мы уверены в своих решениях и несем полную юридическую ответственность за результат.</p>
+</div>
+</div>
+<!-- Adv 4 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">savings</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 uppercase mb-2">Экономия до 30%</h4>
+<p class="text-slate-500 text-sm">Собственный парк оборудования и прямые контракты с производителями материалов.</p>
+</div>
+</div>
+<!-- Adv 5 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">engineering</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 uppercase mb-2">Сертифицированы</h4>
+<p class="text-slate-500 text-sm">Все сотрудники проходят ежегодную аттестацию у ведущих химических концернов.</p>
+</div>
+</div>
+<!-- Adv 6 -->
+<div class="flex gap-6 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">speed</span>
+</div>
+<div>
+<h4 class="font-bold text-lg text-slate-900 uppercase mb-2">Выезд за 24ч</h4>
+<p class="text-slate-500 text-sm">Оперативно реагируем на аварийные протечки в любой точке Москвы и области.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Lead Generation Form -->
+<section class="py-12">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-tertiary-container rounded-2xl p-12 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 translate-x-1/4 -translate-y-1/4 scale-150">
+<span class="material-symbols-outlined text-[300px]">engineering</span>
+</div>
+<div class="relative z-10 max-w-xl">
+<h2 class="text-4xl font-extrabold text-white mb-4 uppercase tracking-tighter">Бесплатный расчет объекта</h2>
+<p class="text-white/80 text-lg">Наш инженер свяжется с вами в течение 15 минут для уточнения технических характеристик вашего объекта.</p>
+</div>
+<div class="w-full md:w-auto relative z-10 flex flex-col md:flex-row gap-4">
+<input class="bg-white border-none rounded-lg px-6 py-4 w-full md:w-72 focus:ring-4 focus:ring-white/20 text-slate-900 font-bold" placeholder="+7 (___) ___-__-__" type="tel"/>
+<button class="bg-slate-900 text-white px-10 py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors shadow-xl">Рассчитать</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Realized Cases / Our Works (Redesigned from SCREEN_16 layout) -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="portfolio">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-[#1499DF] font-bold text-sm tracking-[0.3em] uppercase">Портфолио</span>
+<h2 class="text-4xl font-black text-slate-900 uppercase tracking-tighter mt-2">Реализованные кейсы</h2>
+</div>
+<div class="flex gap-2">
+<button class="p-4 border border-slate-300 rounded-full hover:bg-white transition-colors active:scale-90">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="p-4 border border-slate-300 rounded-full hover:bg-white transition-colors active:scale-90">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-8 overflow-hidden">
+<!-- Case 1 -->
+<div class="min-w-[400px] h-[550px] rounded-2xl relative overflow-hidden group shadow-lg bg-white">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="modern underground parking lot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAramkPoxO08WOIeha9ir2NMj57vRtgNY9FjhBcnpiiFY-Uzx51hBNza8Y7S3wXtBJfKa5FaYd4MNkj-_7n2l8Vbf7FslMACgZSt7-zXLrsTmtwT7rpgUHDGInlXUWJzozG3gfUnop7SJ9zycvb6pjBdQexuvz6c_SA1JJwF95It9N9eyt_xDoo7oFhVtNSCmB5CifFXeRz-gQs2HdctF3S5TSB59QjPywf4RDHOyouZcCWwpY_5KAS2nB6lHoCiOC0Ojo4GDtVCDI"/>
+<div class="absolute top-4 left-4 z-20 px-3 py-1 rounded-md text-xs font-bold uppercase shadow-sm bg-[#1499DF] text-white">ЖК Скандинавия</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-bold text-xl uppercase mb-2">Подземный паркинг</h4>
+<p class="text-white/70 text-sm mb-6 leading-relaxed">Ликвидация множественных протечек деформационных швов на площади 1200 м². Использованы акрилатные гели высокой эластичности.</p>
+<button class="w-fit bg-[#1499DF] text-white px-6 py-3 rounded-lg font-bold text-sm uppercase tracking-wide opacity-0 group-hover:opacity-100 transition-opacity">Подробнее</button>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="min-w-[400px] h-[550px] rounded-2xl relative overflow-hidden group shadow-lg bg-white">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="clean and dry basement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZWUdukXqx8PRrWrC0h__feNaOpmMPiaeRTSODag34IAAyKE8SKpZEtfnZsWARY-9yUgCwJnbDco3zBreKWCHRnqoJOSaZZa_keD0sptbvemAjFZSWryYWeJBQYK7IHdqWEWkY9VtqGKqrYWsGVV-z-pYQRn5WWW5Ntn92Gf-x4kr3gdVStc07Jq0WsMikKGFUwdm73bipfib9k8BG9Btg5QukjsPeH0IsuRz_8tyYTfBCK7LEwjgAeXZ9Iwi_r1JnC8mMrR3Yr6o"/>
+<div class="absolute top-4 left-4 z-20 px-3 py-1 rounded-md text-xs font-bold uppercase shadow-sm bg-[#1499DF] text-white">БЦ Основа</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-bold text-xl uppercase mb-2">Технический подвал</h4>
+<p class="text-white/70 text-sm mb-6 leading-relaxed">Устранение активных напорных протечек через вводы коммуникаций. Работы выполнены в условиях постоянного притока воды.</p>
+<button class="w-fit bg-[#1499DF] text-white px-6 py-3 rounded-lg font-bold text-sm uppercase tracking-wide opacity-0 group-hover:opacity-100 transition-opacity">Подробнее</button>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="min-w-[400px] h-[550px] rounded-2xl relative overflow-hidden group shadow-lg bg-white">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="large industrial concrete reservoir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_u8L86ZF5asz2wawI5sRlJw6XYAkA3vr4vso6KI6cjq6rgAJKjRbPv7sWftB6a9YytoDbmOjBrO76qpsRmTf-ce1GyClxrL2fM3w1cI0e7kbp8eJJ5wnKyzn7qKBHR9iNTX09nFF8RCby-3mP5OPs3tJKBtiNNusm5SUufOqlukSRif0y-mWzW01mrx177JK0XCfQqg2DqEGuMYH9YRyL1QRWt2SKMaUtZyTDjMwUrhvTO5kE4Lz3cRmE_BbbfSjWMhxDAsMSruo"/>
+<div class="absolute top-4 left-4 z-20 px-3 py-1 rounded-md text-xs font-bold uppercase shadow-sm bg-[#1499DF] text-white">МФК ОКО</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-bold text-xl uppercase mb-2">Бетонный резервуар</h4>
+<p class="text-white/70 text-sm mb-6 leading-relaxed">Полная герметизация микротрещин в стенах пожарного резервуара методом сплошного инъектирования бетонной обоймы.</p>
+<button class="w-fit bg-[#1499DF] text-white px-6 py-3 rounded-lg font-bold text-sm uppercase tracking-wide opacity-0 group-hover:opacity-100 transition-opacity">Подробнее</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. About Company (Blog-style Redesign) -->
+<section class="py-24 bg-on-primary-container text-white overflow-hidden relative" id="about">
+<div class="absolute right-0 top-0 w-1/3 h-full hidden lg:block opacity-20">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="industrial engineering focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmdA0alu2Tuis9Kk87zT3eoFlncdtWfkJtRBGHNPKLxzFAmTW5_Lpx70dbXY6BH3XMCGojI-289khUJDusi-u40q4QNKM2xiH3wt5GRWxowd3PPMQZA2jLIdWP7fCjLhamXG8A3Q497LXCf1MjJRV57Y2orEP-uRuirHCcrX7NUEO_y1t0KUQ5ZWBeNXPEEyyy4GrocBed_4sJ366slVFq0hQ7ZGeORse5L-mHLQS38xtCoFK9VkF9hAD9YPkeQiGegPusuqv-ZXc"/>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-3xl">
+<span class="text-[#1499DF] font-bold text-sm tracking-[0.3em] uppercase mb-6 block">О КОМПАНИИ</span>
+<h2 class="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-[1.1]">
+                МЫ НЕ ПРОСТО СТРОИМ. МЫ СОЗДАЕМ <span class="text-[#1499DF]">АБСОЛЮТНУЮ ЗАЩИТУ.</span>
+</h2>
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/5 mb-12">
+<p class="text-xl md:text-2xl font-light italic leading-relaxed text-white/80">
+                    "Наша миссия — внедрять технологии промышленного монолита в каждый проект. Мы верим, что качественная гидроизоляция — это фундамент долговечности любого сооружения. В HYDROGROUP мы объединили инженерную экспертизу с лучшими полимерными составами мира."
+                </p>
+<div class="mt-6 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-[#1499DF] flex items-center justify-center">
+<span class="material-symbols-outlined text-white">person</span>
+</div>
+<div>
+<p class="font-bold uppercase tracking-tight">Александр Волков</p>
+<p class="text-xs text-white/50 uppercase">Основатель, Главный инженер</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 group">
+<span class="w-2 h-2 rounded-full bg-[#1499DF] group-hover:scale-150 transition-transform"></span>
+<span class="text-lg font-medium text-white/90">Собственные лаборатории контроля качества</span>
+</div>
+<div class="flex items-center gap-4 group">
+<span class="w-2 h-2 rounded-full bg-[#1499DF] group-hover:scale-150 transition-transform"></span>
+<span class="text-lg font-medium text-white/90">Лицензия СРО и допуски на особо опасные объекты</span>
+</div>
+<div class="flex items-center gap-4 group">
+<span class="w-2 h-2 rounded-full bg-[#1499DF] group-hover:scale-150 transition-transform"></span>
+<span class="text-lg font-medium text-white/90">Работа с материалами BASF, MC-Bauchemie, Sika</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 group">
+<span class="w-2 h-2 rounded-full bg-[#1499DF] group-hover:scale-150 transition-transform"></span>
+<span class="text-lg font-medium text-white/90">Команда штатных инженеров с опытом 10+ лет</span>
+</div>
+<div class="flex items-center gap-4 group">
+<span class="w-2 h-2 rounded-full bg-[#1499DF] group-hover:scale-150 transition-transform"></span>
+<span class="text-lg font-medium text-white/90">Прозрачное ценообразование без скрытых работ</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Trust & Quality Guarantees -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-4xl font-black uppercase tracking-tighter mb-8">Гарантии и сертификаты</h2>
+<p class="text-slate-600 mb-8 leading-relaxed">
+                    Все работы выполняются в соответствии со СНиП и ГОСТ. Мы предоставляем полный пакет исполнительной документации, включая акты скрытых работ и сертификаты на применяемые составы.
+                </p>
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-[#1499DF]">
+<p class="font-bold text-slate-800 uppercase text-sm mb-1">Юридическая гарантия</p>
+<p class="text-slate-500 text-xs">Прописываем ответственность за протечки в договоре на срок до 15 лет.</p>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-slate-900">
+<p class="font-bold text-slate-800 uppercase text-sm mb-1">Страхование рисков</p>
+<p class="text-slate-500 text-xs">Наша ответственность застрахована на сумму 50 000 000 ₽.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow cursor-zoom-in">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all" data-alt="certification doc" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqtr3_MtKUaFm8bZpp9jKBc68gGovN5UhUc_kV9c745kEXO84u0u37FoeaLVM4CMuwn0cEpWuQ2Bh4Pxrql5oY7bIB9G_kc6LBuH4czrXq_7Z1eKHu-PFcTKqzzVaEJaM7ODsNJvo2LkHxNhOUAMzde1YXSpq3v9fuJFqfwfuiFnWO25wtK78qYD8KQalbZ343JCqXCUlql0ca8JAV9RyLVaGdPFy6pC2Fa24rJpevmhy5mifBUD3fcx56EiJBEcZMIWBmgd9j15k"/>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow cursor-zoom-in">
+<img class="w-full h-auto grayscale hover:grayscale-0 transition-all" data-alt="recommendation letter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Sg2O3zKGlUwPpHPFeNcAnTUovdandzHJvyn2lpVrTGEkGAkTIlwpw_usoH3Hpm_F4wVGh95s_QfEfH2dnaUI8ru_Op_vrhJ9pkxEDRTapAw41xfuwScqCn1Zb6ODFnDH9JWDC6xNebWiSxBlxcpE2abEKDmCjMsZQWZfBN3cPI0zYeOLH8Vtz00vTBtICE6o3MtrW7xax695Zu3Q7UqPmhBphHM_hxEP4mw54JosWjblfnjHxlIQniTNF8ZiGur1jGm3PXPjYPo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FAQ (Accordion) -->
+<section class="py-24 bg-surface">
+<div class="mx-auto px-8 max-w-6xl">
+<h2 class="text-4xl font-black text-slate-900 uppercase tracking-tighter mb-12 text-center">Часто задаваемые вопросы</h2>
+<div class="space-y-4">
+<div class="accordion-item border border-slate-200 rounded-xl overflow-hidden bg-white">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-slate-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-bold text-slate-800 uppercase tracking-tight">Можно ли делать гидроизоляцию, когда вода уже течет?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform">expand_more</span>
+</button>
+<div class="accordion-content bg-slate-50">
+<div class="px-8 py-6 text-slate-600 text-sm leading-relaxed">
+                        Да, именно в этом преимущество инъекционной технологии. Мы используем специальные расширяющиеся смолы, которые застывают при контакте с водой за секунды, останавливая напорные протечки моментально.
+                    </div>
+</div>
+</div>
+<div class="accordion-item border border-slate-200 rounded-xl overflow-hidden bg-white">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-slate-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-bold text-slate-800 uppercase tracking-tight">Каков срок службы инъекционной гидроизоляции?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform">expand_more</span>
+</button>
+<div class="accordion-content bg-slate-50">
+<div class="px-8 py-6 text-slate-600 text-sm leading-relaxed">
+                        При правильном подборе состава срок службы полимерных гелей и смол сопоставим со сроком службы самого бетонного сооружения — от 30 до 50 лет и более.
+                    </div>
+</div>
+</div>
+<div class="accordion-item border border-slate-200 rounded-xl overflow-hidden bg-white">
+<button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-slate-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
+<span class="font-bold text-slate-800 uppercase tracking-tight">Нужно ли откапывать фундамент снаружи?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform">expand_more</span>
+</button>
+<div class="accordion-content bg-slate-50">
+<div class="px-8 py-6 text-slate-600 text-sm leading-relaxed">
+                        Нет. Одно из главных преимуществ — возможность проведения работ изнутри помещения (подвала или паркинга). Состав проникает сквозь стену или трещину и образует защитный барьер с внешней стороны.
+                    </div>
+</div>
+</div>
+<div class="accordion-item border border-slate-200 rounded-xl overflow-hidden bg-white"><button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-slate-50 transition-colors" onclick="this.parentElement.classList.toggle('active')"><span class="font-bold text-slate-800 uppercase tracking-tight">Какие составы вы используете в работе?</span><span class="material-symbols-outlined accordion-icon transition-transform">expand_more</span></button><div class="accordion-content bg-slate-50"><div class="px-8 py-6 text-slate-600 text-sm leading-relaxed">Мы работаем исключительно с сертифицированными полимерными составами от мировых лидеров: BASF, MC-Bauchemie и Sika. Это акрилатные гели, полиуретановые смолы и эпоксидные составы, подбираемые индивидуально под каждую техническую задачу.</div></div></div><div class="accordion-item border border-slate-200 rounded-xl overflow-hidden bg-white"><button class="w-full px-8 py-6 flex justify-between items-center text-left hover:bg-slate-50 transition-colors" onclick="this.parentElement.classList.toggle('active')"><span class="font-bold text-slate-800 uppercase tracking-tight">От чего зависит итоговая стоимость работ?</span><span class="material-symbols-outlined accordion-icon transition-transform">expand_more</span></button><div class="accordion-content bg-slate-50"><div class="px-8 py-6 text-slate-600 text-sm leading-relaxed">Цена формируется исходя из объема повреждений, типа используемого материала (смола или гель), сложности доступа к объекту и интенсивности протечек. Точная смета составляется инженером после бесплатного осмотра объекта.</div></div></div></div>
+</div>
+</section>
+<!-- 10. Contacts (Map + Form) -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="contacts">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="bg-white rounded-2xl p-10 shadow-xl">
+<h2 class="text-3xl font-black text-slate-900 uppercase tracking-tighter mb-8">Контакты</h2>
+<div class="space-y-8 mb-12">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Адрес офиса</p>
+<p class="font-bold text-slate-800">г. Москва, Пресненская наб., 12, офис 45</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Телефон</p>
+<p class="font-bold text-slate-800 text-xl">+7 (916) 589-91-23</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-[#1499DF]">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email</p>
+<p class="font-bold text-slate-800">info@hydrogroup.ru</p>
+</div>
+</div>
+</div>
+<div class="p-6 bg-[#1499DF]/5 rounded-xl border border-[#1499DF]/10">
+<p class="text-sm font-bold text-slate-700 uppercase mb-4">Написать нам в WhatsApp</p>
+<button class="w-full bg-[#25D366] text-white py-4 rounded-lg font-bold flex items-center justify-center gap-2 hover:brightness-105 transition-all">
+<span class="material-symbols-outlined">chat</span> Открыть чат
+                    </button>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-xl min-h-[400px] bg-slate-200 relative">
+<!-- Placeholder for Map -->
+<div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-4">
+<span class="material-symbols-outlined text-6xl">map</span>
+<span class="font-bold uppercase tracking-widest text-xs">Интерактивная карта</span>
+</div>
+<iframe allowfullscreen="" class="w-full h-full border-0 absolute inset-0 grayscale opacity-70" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.123!2d37.53!3d55.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzAwLjAiTiAzN8KwMzInMDAuMCJF!5e0!3m2!1sen!2sru!4v1234567890"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/50 bg-[#002d46] text-white border-white/10">
+<div class="max-w-7xl mx-auto py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+<div>
+<span class="text-xl font-bold uppercase tracking-tighter text-white">HYDROGROUP</span>
+<p class="mt-4 max-w-xs text-sm text-white/70">
+                    Профессиональные услуги по инъекционной гидроизоляции любой сложности в Москве и МО. Гарантия 15 лет.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-3">
+<span class="font-bold text-xs uppercase tracking-widest text-white/50">Навигация</span>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#services">Услуги</a>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#prices">Цены</a>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#portfolio">Кейсы</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-xs uppercase tracking-widest text-white/50">Компания</span>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#about">О нас</a>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#contacts">Контакты</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-bold text-xs uppercase tracking-widest text-white/50">Документы</span>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#">Конфиденциальность</a>
+<a class="hover:text-[#1499DF] transition-colors text-sm text-white/80 hover:text-[#1499DF]" href="#">Гарантии</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-6 border-white/10">
+<p class="text-xs text-white/40">© 2024 HYDROGROUP. Промышленный Монолит. Все права защищены.</p>
+<div class="flex gap-4">
+<span class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#1499DF] hover:text-white transition-colors cursor-pointer bg-white/10 text-white">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</span>
+<span class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#1499DF] hover:text-white transition-colors cursor-pointer bg-white/10 text-white">
+<span class="material-symbols-outlined text-sm">call</span>
+</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HYDROGROUP | Инъекционная гидроизоляция</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#6f7882",
+                        "on-tertiary-fixed": "#3b0900",
+                        "surface-variant": "#dfe3e6",
+                        "surface-container": "#eaeef1",
+                        "tertiary": "#b02f00",
+                        "inverse-primary": "#8fcdff",
+                        "surface-container-high": "#e5e9ec",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001e30",
+                        "surface-bright": "#f6fafd",
+                        "on-tertiary-container": "#541200",
+                        "on-tertiary-fixed-variant": "#862200",
+                        "on-secondary-fixed-variant": "#264a64",
+                        "surface-tint": "#006495",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#cbe6ff",
+                        "outline-variant": "#bec7d2",
+                        "inverse-surface": "#2c3134",
+                        "on-background": "#171c1f",
+                        "primary-container": "#1499df",
+                        "surface-container-low": "#f0f4f7",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#cbe6ff",
+                        "inverse-on-surface": "#edf1f4",
+                        "surface-dim": "#d6dbdd",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "on-surface": "#171c1f",
+                        "on-primary-fixed-variant": "#004b71",
+                        "on-primary-container": "#002d46",
+                        "on-primary": "#ffffff",
+                        "surface": "#f6fafd",
+                        "surface-container-highest": "#dfe3e6",
+                        "background": "#f6fafd",
+                        "tertiary-container": "#ff5722",
+                        "secondary-fixed-dim": "#a7cbea",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#001e30",
+                        "error": "#ba1a1a",
+                        "secondary": "#3f627d",
+                        "on-surface-variant": "#3f4850",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#bbdefe",
+                        "primary-fixed-dim": "#8fcdff",
+                        "primary": "#006495",
+                        "on-secondary-container": "#40637e",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sky-600 dark:text-sky-400">menu</span>
+<span class="font-['Manrope'] font-black tracking-tighter uppercase text-xl text-slate-900 dark:text-white tracking-widest">HYDROGROUP</span>
+</div>
+<span class="material-symbols-outlined text-sky-600 dark:text-sky-400">engineering</span>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center px-6 py-12 overflow-hidden bg-inverse-surface">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" src="images/engineer_work.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-transparent"></div>
+<div class="relative z-10 max-w-full">
+<span class="inline-block text-primary-container font-label text-xs font-bold uppercase tracking-[0.2em] mb-4">Промышленные решения</span>
+<h1 class="font-display font-extrabold text-4xl leading-tight text-white mb-6 uppercase tracking-tight">ИНЪЕКЦИОННАЯ <br/> ГИДРОИЗОЛЯЦИЯ</h1>
+<p class="text-surface-variant font-body text-base mb-10 max-w-[80%] leading-relaxed">Профессиональное устранение протечек и усиление фундаментов любой сложности с гарантией 15 лет.</p>
+<div class="flex flex-col gap-4">
+<button class="w-full py-5 bg-tertiary-container text-white font-bold rounded-lg uppercase tracking-wider text-sm shadow-lg shadow-tertiary/20 active:scale-95 transition-all">Вызвать специалиста</button>
+<button class="w-full py-5 border border-outline-variant text-white font-bold rounded-lg uppercase tracking-wider text-sm backdrop-blur-sm active:bg-white/10 transition-all">Цены</button>
+</div>
+</div>
+</section>
+<!-- Services Section (Vertical Stack) -->
+<section class="py-16 px-6 bg-surface-container-low">
+<h2 class="font-display font-black text-2xl uppercase tracking-tighter mb-8 border-l-4 border-primary pl-4">Услуги</h2>
+<div class="space-y-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-48 object-cover" src="images/injection_process.jpg"/>
+<div class="p-6">
+<h3 class="font-display font-bold text-lg mb-2">Инъекционный ремонт</h3>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed">Герметизация деформационных швов и заполнение пустот полимерными составами.</p>
+<a class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2" href="#">Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-48 object-cover" src="images/service_2.jpg"/>
+<div class="p-6">
+<h3 class="font-display font-bold text-lg mb-2">Усиление кладок</h3>
+<p class="text-on-surface-variant text-sm mb-4 leading-relaxed">Восстановление несущей способности старинных и современных кирпичных стен.</p>
+<a class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2" href="#">Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Price List (Mobile Optimized) -->
+<section class="py-16 px-6">
+<h2 class="font-display font-black text-2xl uppercase tracking-tighter mb-8">Прайс-лист</h2>
+<div class="space-y-3">
+<div class="flex justify-between items-center p-5 bg-surface-container rounded-lg">
+<span class="text-sm font-semibold max-w-[60%]">Ремонт трещин в бетоне</span>
+<span class="text-primary font-black text-sm">от 2 800 ₽</span>
+</div>
+<div class="flex justify-between items-center p-5 bg-surface-container-low rounded-lg">
+<span class="text-sm font-semibold max-w-[60%]">Отсечная гидроизоляция</span>
+<span class="text-primary font-black text-sm">от 3 500 ₽</span>
+</div>
+<div class="flex justify-between items-center p-5 bg-surface-container rounded-lg">
+<span class="text-sm font-semibold max-w-[60%]">Герметизация вводов</span>
+<span class="text-primary font-black text-sm">от 1 900 ₽</span>
+</div>
+</div>
+</section>
+<!-- Lead Form -->
+<section class="mx-6 p-8 bg-tertiary-container rounded-2xl shadow-xl shadow-tertiary/20">
+<h2 class="font-display font-black text-2xl text-white uppercase tracking-tight mb-2">Бесплатный расчет</h2>
+<p class="text-white/80 text-sm mb-8">Инженер свяжется с вами в течение 15 минут для уточнения деталей.</p>
+<form class="space-y-4">
+<input class="w-full bg-white/10 border-0 border-b-2 border-white/30 text-white placeholder:text-white/50 focus:ring-0 focus:border-white py-4 px-0 transition-all" placeholder="+7 (___) ___-__-__" type="tel"/>
+<div class="flex items-start gap-2 px-1">
+    <input type="checkbox" id="privacy-check-mob" class="mt-1 w-3 h-3 rounded border-none text-[#1499DF] cursor-pointer">
+    <label for="privacy-check-mob" class="text-[10px] text-white/60 leading-tight">Я даю согласие на обработку данных.</label>
+</div>
+<button class="w-full py-5 bg-white text-tertiary font-black rounded-lg uppercase tracking-widest text-sm active:scale-95 transition-all" type="submit">Заказать</button>
+</form>
+</section>
+<!-- Advantages Grid -->
+<section class="py-16 px-6 bg-surface">
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<h4 class="font-display font-bold text-sm mb-1 uppercase">15 лет</h4>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-tighter">Гарантии по договору</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h4 class="font-display font-bold text-sm mb-1 uppercase">Лицензия</h4>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-tighter">СРО и МЧС допуски</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">speed</span>
+<h4 class="font-display font-bold text-sm mb-1 uppercase">24 часа</h4>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-tighter">Выезд на объект</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h4 class="font-display font-bold text-sm mb-1 uppercase">Штат</h4>
+<p class="text-[11px] text-on-surface-variant uppercase tracking-tighter">Опытные инженеры</p>
+</div>
+</div>
+</section>
+<!-- Portfolio Horizontal Slider -->
+<section class="py-16 bg-surface-container-low overflow-hidden">
+<h2 class="font-display font-black text-2xl uppercase tracking-tighter px-6 mb-8">Портфолио</h2>
+<div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar px-6 gap-5">
+<!-- Project 1 -->
+<div class="snap-start flex-shrink-0 w-[80vw] bg-white rounded-xl overflow-hidden shadow-lg border-b-4 border-primary">
+<div class="relative">
+<img class="w-full h-80 object-cover" src="images/case_skyscraper.jpg"/>
+<span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black px-3 py-1 uppercase tracking-widest rounded-full">ЖК Скандинавия</span>
+</div>
+<div class="p-6">
+<p class="text-xs text-on-surface-variant uppercase mb-4 tracking-widest">Гидроизоляция паркинга</p>
+<button class="w-full py-3 bg-surface-container text-on-surface font-bold rounded-lg uppercase text-[10px] tracking-widest">Подробнее</button>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="snap-start flex-shrink-0 w-[80vw] bg-white rounded-xl overflow-hidden shadow-lg border-b-4 border-primary">
+<div class="relative">
+<img class="w-full h-80 object-cover" src="images/case_complex.jpg"/>
+<span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black px-3 py-1 uppercase tracking-widest rounded-full">БЦ Метрополис</span>
+</div>
+<div class="p-6">
+<p class="text-xs text-on-surface-variant uppercase mb-4 tracking-widest">Усиление фундамента</p>
+<button class="w-full py-3 bg-surface-container text-on-surface font-bold rounded-lg uppercase text-[10px] tracking-widest">Подробнее</button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 px-6 bg-surface-container-lowest">
+<div class="mb-12">
+<img class="w-full h-64 object-cover rounded-xl mb-8" src="images/engineer_portrait.jpg"/>
+<h2 class="font-display font-black text-3xl uppercase tracking-tighter mb-6">HYDROGROUP <br/> <span class="text-primary">Инженерная точность</span></h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">Мы специализируемся на высокотехнологичных решениях в области промышленной гидроизоляции. Каждый объект для нас — это вызов, требующий безупречного исполнения и долговечности.</p>
+<div class="flex gap-12">
+<div>
+<div class="text-3xl font-black text-primary">500+</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest">Объектов</div>
+</div>
+<div>
+<div class="text-3xl font-black text-primary">12</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest">Лет опыта</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-16 px-6 bg-surface-container">
+<h2 class="font-display font-black text-2xl uppercase tracking-tighter mb-8">FAQ</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container-lowest rounded-xl">
+<summary class="list-none p-5 flex justify-between items-center cursor-pointer">
+<span class="text-sm font-bold uppercase tracking-tight">Как долго длится ремонт?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-5 pt-0 text-sm text-on-surface-variant leading-relaxed">
+                        Стандартный цикл работ занимает от 3 до 7 рабочих дней в зависимости от объема и сложности конструкции.
+                    </div>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl">
+<summary class="list-none p-5 flex justify-between items-center cursor-pointer">
+<span class="text-sm font-bold uppercase tracking-tight">Есть ли гарантия на работы?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-5 pt-0 text-sm text-on-surface-variant leading-relaxed">
+                        Да, мы предоставляем официальную гарантию по договору сроком до 15 лет на все виды гидроизоляционных работ.
+                    </div>
+</details>
+</div>
+</section>
+<!-- Contacts & Map -->
+<section class="pt-16 pb-12 bg-white">
+<h2 class="font-display font-black text-2xl uppercase tracking-tighter px-6 mb-8">Контакты</h2>
+<div class="w-full h-72 bg-surface-container mb-8">
+<img class="w-full h-full object-cover grayscale brightness-75" src="images/map_moscow.jpg"/>
+</div>
+<div class="px-6 space-y-6">
+<div>
+<span class="text-[10px] uppercase font-bold text-primary tracking-[0.2em] block mb-2">Адрес</span>
+<p class="font-bold text-lg">г. Москва, ул. Промышленная, 12, оф. 402</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-4 group" href="tel:+74950000000">
+<div class="w-12 h-12 bg-surface-container-low flex items-center justify-center rounded-full group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="font-black text-xl">+7 (495) 000-00-00</span>
+</a>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-slate-900 flex items-center justify-center rounded-lg text-white">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div class="w-12 h-12 bg-[#25D366] flex items-center justify-center rounded-lg text-white">
+<span class="material-symbols-outlined">forum</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-12 pb-24 px-6 bg-slate-100 dark:bg-slate-950 flex flex-col gap-6 text-center">
+<div class="bg-slate-200 dark:bg-slate-800 h-px w-full mb-8"></div>
+<div class="font-['Manrope'] font-bold text-slate-900 dark:text-slate-100 uppercase tracking-widest text-lg">HYDROGROUP</div>
+<p class="font-['Inter'] text-xs text-slate-500 leading-relaxed max-w-[280px] mx-auto">© 2024 Hydrogroup Industrial Systems. Precise Engineering.</p>
+<div class="flex justify-center gap-6">
+<a class="text-xs text-slate-400 uppercase tracking-widest font-bold" href="#">Приватность</a>
+<a class="text-xs text-slate-400 uppercase tracking-widest font-bold" href="#">Соответствие</a>
+<a class="text-xs text-slate-400 uppercase tracking-widest font-bold" href="#">Карта сайта</a>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center pt-2 pb-6 px-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border-t border-slate-200/20 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center justify-center text-sky-600 dark:text-sky-400 scale-110" href="#">
+<span class="material-symbols-outlined">construction</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Услуги</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">calculate</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Расчет</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">home_repair_service</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Проекты</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">Контакты</span>
+</a>
+</nav>
+</body></html>
